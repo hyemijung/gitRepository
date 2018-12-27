@@ -25,6 +25,10 @@ public class ForFlowExTest4 {
 			System.out.println();
 
 			
+	
+		 
+			
+			
 //		내가 잘못 한것
 //		for ( int i = 0; i >= 0; i++ ) {
 //			num = i % 2;
