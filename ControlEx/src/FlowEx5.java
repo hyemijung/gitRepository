@@ -6,7 +6,7 @@ public class FlowEx5 {
 		// TODO Auto-generated method stub
 
 //		중첩 if문 (최대한 지양하자)
-//		if(조건식2) {
+//		if(조건식1) {
 //			조건식 1의 연산결과가 true일 때 수행될 문장들을 적는다
 //			if(조건식2) {
 //				조건식 1과 조건식2가 모두 true일 때 수행될 문장들
