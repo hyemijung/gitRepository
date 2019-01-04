@@ -1,4 +1,4 @@
-
+//샘코드 보고 다시 짜기
 public class MyCalculator {
 
 //	속성

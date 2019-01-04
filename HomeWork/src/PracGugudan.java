@@ -1,5 +1,5 @@
 
-public class Gugudan {
+public class PracGugudan {
 
 	void gugu() {
 		int result = 0;
@@ -9,16 +9,18 @@ public class Gugudan {
 				System.out.print(i + " * " + n + " = " + result + "\t");
 			}
 			System.out.println();
+
 		}
-	
+
 	}
 
 	void gugu(int num) {
-
-		for (int i = 1; i <= 9; i++) {
-			System.out.print(num + " * " + i + " = " + (num * i) + "\t");
-
+		int result = 0;
+		for (int n = 1; n <= 9; n++) {
+			result = num * n;
+			System.out.print(num + " * " + n + " = " + result + "\t");
 		}
+		System.out.println();
 
 	}
 }

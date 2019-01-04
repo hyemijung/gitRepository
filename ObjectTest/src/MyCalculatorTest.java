@@ -1,3 +1,4 @@
+//샘코드 보고 다시 짜기
 import java.util.Scanner;
 
 public class MyCalculatorTest {
