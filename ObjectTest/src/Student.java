@@ -38,7 +38,7 @@ public class Student {
 		double average = 0;
 		sum = kor + eng + math;
 		
-		average = ((int)(sum/3)*100.0 + 0.5)/100.0;
+		average = ((int)(sum/3)*100 + 0.5)/100.0;
 		
 		return average;
 	}
@@ -55,7 +55,7 @@ public class Student {
 	System.out.println("평균: " + getAverage());
 }	
 	
-//	void testResult() {
+//	void testResult() {                 // 내가 한 방법
 //		System.out.println("이름: " + name + " / 반: " + ban + " / 번호: " + no);
 //		System.out.println("국어: " + kor + " / 영어: " + eng + " / 수학: " + math);
 //		System.out.println("총점: " + result);

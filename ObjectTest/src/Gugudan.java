@@ -1,24 +1,27 @@
 
 public class Gugudan {
 
-	void gugu() {
-		int result = 0;
-		for (int i = 2; i <= 9; i++) {
-			for (int n = 1; n <= 9; n++) {
-				result = i * n;
-				System.out.print(i + " * " + n + " = " + result + "\t");
+//	5일차 훈련일지 참고
+//	구구단 가로방식
+	void multiply() {
+		for (int i = 0; i < 8; i++) {
+			for (int n = 0; n < 9; n++) {
+
+				System.out.print((i + 2) + " * " + (n + 1) + " = " + (i + 2) * (n + 1) + "\t");
 			}
 			System.out.println();
 		}
-	
 	}
 
-	void gugu(int num) {
+	
+//	구구단 세로방식
+	void mutiply2() {
+		for (int i = 0; i < 9; i++) {
+			for (int n = 0; n < 8; n++) {
 
-		for (int i = 1; i <= 9; i++) {
-			System.out.print(num + " * " + i + " = " + (num * i) + "\t");
-
+				System.out.print((n + 2) + " * " + (i + 1) + " = " + (n + 2) * (i + 1) + "\t");
+			}
+			System.out.println();
 		}
-
 	}
 }

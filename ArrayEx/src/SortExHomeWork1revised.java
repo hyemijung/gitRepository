@@ -4,7 +4,7 @@ public class SortExHomeWork1revised {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-//		2차원 배열 생성과 선언 
+//		구구단 2차원 배열 생성과 선언 
 		// 반성 - 행렬[8][9]값만으로 충분한데 더많이 생성함 - 비효율
 		int[][] gugudan = new int[8][9];
 

@@ -12,6 +12,8 @@ public class StudentTest {
 		
 		Student student = new Student(name, ban, no, kor, eng, math);
 		
+		student.getTotal();
+		student.getAverage();
 		
 //		student.testResult(); // 샘 기획안에 결과출력 메서드를 만들라는 말 없었음
 		
