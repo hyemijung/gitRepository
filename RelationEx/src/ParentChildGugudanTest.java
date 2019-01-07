@@ -14,10 +14,10 @@ public class ParentChildGugudanTest {
 		System.out.println("자식의 인스턴스 변수를 사용한 출력");  // 인스턴스 변수는 그 물건이 존재하는 한 기록한다
 		childG.oneDanGuguPrint();
 		
-		int dan = 3;
 		
+		childG.dan = 3;
 		System.out.println("매개변수를 사용한 출력");
-		childG.oneDanGuguPrint(dan);
+		childG.oneDanGuguPrint();
 		
 		
 		

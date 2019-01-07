@@ -5,7 +5,7 @@ public class ChildGugudan extends ParentGugudan {
 	int dan = 0;
 
 	void oneDanGuguPrint() {
-		int dan = 2;
+		
 		int mutiply = 0;
 		for (int i = 0; i < 9; i++) {
 			mutiply = dan * (i + 1);
