@@ -1,5 +1,5 @@
 
-public class Tv {
+public class Tv extends Object{
 
 	boolean power = false;
 	int channel = 0;

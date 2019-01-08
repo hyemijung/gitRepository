@@ -1,4 +1,4 @@
-
+//11차 강의
 public class MuteTv extends Tv {  // extends 해야 Tv기능 다 사용가능함
 
 	int volume = 0;

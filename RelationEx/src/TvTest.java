@@ -5,6 +5,7 @@ public class TvTest {
 		
 		Tv tv = new Tv();
 		
+		
 		tv.power();
 		
 		tv.channel = 10;
