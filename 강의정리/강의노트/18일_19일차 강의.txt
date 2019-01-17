@@ -1,4 +1,4 @@
-18일차 강의 /19일차 강의
+18일차 강의
 
 능력단위: 데이터베이스 구현
 
@@ -240,17 +240,12 @@ DDL 은 사용할수 없다
 < 무결한 데이터의 5가지 제약 조건 >
 (아예 애초에 무결한 데이터가 되도록 원천봉쇄하자는 것)
 무결성 제약조건          역할
-
 NOT NULL                 NULL을 허용하지 않는다
-
 UNIQUE		      중복된 값을 허용하지 않는다. 항상 유일한 값을 갖도록 한다
                               (각 행 구분)
-
 PRIMARY KEY             NULL을 허용하지 않고 중복된 값을 허용하지 않는다
                               NOT NULL 조건과 UNIQUE 조건을 결합한 형태
-
 FOREIGN KEY              참조되는 테이블의 컬럼의 값이 존재하면 허용한다
-
 CHECK		      설정한 값만을 허용한다
 
 
@@ -404,139 +399,3 @@ EPSON SERIES1     10000 가 조회 가능하도록 만들자
 테이블 사이의 관계에서 발생하는 개념
 
 
-!!오류!!
-integrity constraint (TOTO.EMP07_DEPTNO_DEPT02_FK) violated - parent key not found
-
-
-
-문제>
-마트
-
-과자 테이블
-제품번호	  과자명    과자가격     제조날짜
-
-제품번호는 숫자 4자리  유일하고 널이 들어갈수 없다
-과자명 글자50
-과자가격은 정수 4자리, 소수점 1자리
-제조날짜는 날짜
-
-고객 테이블
-
-사람이름 	    주민번호(4자리정도)    구매물품
-
-사람이름은 문자20
-주민번호는 문자14  유일하고 널이 들어갈수 없다
-구매물품은 과자 테이블의 제품번호와 도메인이 동일하며(FOREIGN KEY사용해 참조하라는 것)
-
-
-과자 데이터 입력
-1000	알아서 	SYSDATE
-1001	알아서	SYSDATE
-1002	알아서	SYSDATE
-
-고객 데이터는 알아서 4개 입력
-
->>날짜 - 데이터타입 : DATE
-입력할때 DATE 자리에 SYSDATE (하면 시스템상의 데이터가 들어감)
-
-
-
-왜래키는 NULL 이 허용
-기본키는 NULL 이 허용 X
-
-
-
-< CHECK와 DEFAULT의 제약 조건 >
-
-< DEFAULT 제약조건 >
-
-LOC VARCHAR2(13) DEFAULT 'SEOUL' 
- --LOC에 대한 값을 직접 넣지 않는다면 무조건 SEOUL을 넣겠다는 것
-
- --DEFAULT는 CONSTRAINT 를 앞에 붙이지 않는다   
-
-
-
-
-BONUS
-DEPT
-EMP
-SALGRADE
-TEST
-
-
-
->> 테이블 삭제
-1) DROP TABLE 테이블명;
-2) 테이블 우클릭 - 테이블 - 삭제로 가서 지우기
-
-
-
-문제>
-
-사원           부서
-
-널이 허용되어 있는지 없는지 각 컬럼의 여부
-기본키 여부
-외래키 여부
-
-
-< 오라클 제약조건 추가하기 >
-ALTER 테이블명
-ADD CONSTRAINT 제약조건명 제약조건 EXPR...
-
-
-!오류!
-need to specify the datatype for this column
-
-
-
-제약조건은 수정 없다
-삭제하고 다시 만드는것
-
-컬럼은 수정이 가능하다
-(이 둘을 헷갈려하지말자)
-
-
->> NOT NULL은 ADD가 안되고 MODIFY 를 통해서만 가능
-
-
->> 기본키에는 NOT NULL이 포함된 것
->> NOT NULL은 엄밀히 따져 제약조건이 아님
-
->>NOT NULL 있으면서 기본키 있을수 있음
-기본키있으면서  NOT NULL 있을수 있음
-
->> 하지만 기본키는 NOT NULL을 포함하므로
-둘중 하나 더 범위가 큰 기본키만 사용한다
-
->>차이점
-기본키 = 유니크 키 + NOT NULL 인데 둘의 차이점은??
-
-기본키: 유니크 키 + NOT NULL + INDEX
-(인덱스가 존재함)
-
-유니크 키 + NOT NULL
-
-
-
-
-
-< 시험 실기 대비 >
-
->>우선 이클립스에 통합 툴 설치해야함
-이클립스 - help - install newsoftware - add - 이름에 ERMaster 적고 샘이보내주신 주소 붙여넣기한다
-
->>테이블에 대고 더블클릭
-
-
-온라인에서
-http://aquerytool.com/
-
-이클립스에서
-http://blog.naver.com/
-
-
-ERMaster
-
-http://ermaster.sourceforge.net/update-site/
