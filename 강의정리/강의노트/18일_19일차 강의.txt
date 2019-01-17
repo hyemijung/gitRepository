@@ -368,6 +368,31 @@ PRIMARY KEY 제약조건
 특정 컬럼에 PRIMARY KEY 제약조건을 주면 좋다.
      
 
+[형식]
+Alter table 테이블명
+Add constraint 제약조건명 제약조건(지정할 컬럼명);
+
+
+예)
+Alter table dept
+Add constraint dept_deptno_PK primary key(deptno);
+
+
+>> 테이블을 만들때 제약조건을 만들수 있지만, 테이블ㅇ르 만들고 alter table ~ add constraint ~ 해서 제약조건을 따로 만드는게 더좋다 (기능분리 -> 유지/보수 수월)
+
+>> 제약조건은 수정. 불가능
+>> 제약조건은 지우고 다시 만든다
+>> constraint name은 유일하다,
+똑같은 이름은 존재하지 않는다
+But 어떤 컬럼이 지워졌는지 모름
+
+Alter table dept
+Drop constraint dept_deptno_PK;
+
+
+
+
+
 
 >>문제
 
@@ -397,5 +422,84 @@ EPSON SERIES1     10000 가 조회 가능하도록 만들자
 < 참조 무결성을 위한 FOREIGN KEY 제약 조건 >
 참조 무결성이란?
 테이블 사이의 관계에서 발생하는 개념
+
+
+CREATE TABLE EMP07
+(
+    EMPNO        NUMBER(4) PRIMARY KEY,   
+    ENAME        VARCHAR2(10), 
+    JOB           VARCHAR2(9),  
+    MGR           NUMBER(4),    
+    HIREDATE     DATE,         
+    SAL            NUMBER(7,2),  
+    COMM         NUMBER(7,2),  
+    DEPTNO       NUMBER(2) 
+            CONSTRAINT EMP07_DEPTNO_DEPT02_FK REFERENCES DEPT02(DEPTNO)  
+);
+
+
+integrity constraint (TOTO.EMP07_DEPTNO_DEPT02_FK) violated - parent key not found
+
+마트
+
+과자 테이블
+제품번호    과자명	과자가격	    제조날짜
+제품번호는 숫자 4자리    유일하고 널이 들어갈수 없다
+과자명은 글자50
+과자각격은 정수 4자리, 소수점 1
+제조날짜는 날짜
+
+고객 테이블
+사람이름	주민번호	구매물품
+사람이름은 문자20
+주민번호는 문자14 유일하고 널이 들어갈수 없다
+구매물품은 과자 테이블의 제품번호와 도메인이 동일하며
+                                   참조하고 있다
+과자 데이터 입력
+1000     알아서      SYSDATE
+1001     알아서	SYSDATE
+1002     알아서	SYSDATE
+
+고객 데이터는 알아서 4개 입력
+
+
+
+>>CHECK와 DEFAULT의 제약 조건
+
+DEFAULT 제약 조건 설정하기
+
+
+CREATE TABLE DEPT03(
+    DEPTNO NUMBER(2) PRIMARY KEY   --기본키는 유일성, 여기다 DEFAULT 못씀
+    , DNAME VARCHAR2(14)
+    , LOC VARCHAR2(13) DEFAULT 'SEOUL'  --LOC에 대한 값을 직접 넣지 않는다면 무조건 SEOUL을 넣겠다는 것
+);           
+
+
+
+BONUS
+DEPT
+EMP
+SALGRADE
+TEST
+
+
+사원     부서
+널이 허용되어있는지 없는지 각 컬럼의 여부
+기본키 여부
+외래키 여부
+
+
+
+>>오라클 제약조건 추가하기
+ALTER TABLE 테이블명
+ADD CONSTRAINT 제약조건명 제약조건 EXPR....
+
+need to specify the datatype for this column
+
+
+기본키 : 유니크 키 + NOT NULL + INDEX
+
+유니크 키 + NOT NULL: 
 
 
