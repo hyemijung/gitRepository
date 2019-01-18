@@ -1,0 +1,251 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE7DF7A1-2EE5-372A-15C9-6E8773A97A5F" schemaObject="0D1F25F7-37E5-A754-F471-0A00B8BAE8B2" name="PLAYER">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PLAYER</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PLAYER_ID" id="D1FB7D4E-76DD-4D74-459C-186B1A321041">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>PLAYER_ID</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLAYER_NAME" id="63FC41E0-E1E9-1DF1-ECA6-FBE404B22D3C">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>PLAYER_NAME</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEAM_ID" id="BA8F4E7F-8C5E-9A77-3DD4-65160A152D8A">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>TEAM_ID</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E79EA95A-C049-AC32-EF6B-6BB97D2FDF29" referredColumn="F2FF177C-65BF-0DDC-E3FA-5C96DF7BE307"/>
+</associations>
+</Column>
+<Column name="E_PLAYER_NAME" id="9539FD3B-7B4E-2695-39D3-C8C6C69C00C8">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>E_PLAYER_NAME</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NICKNAME" id="D275CF11-294B-FCA8-EA79-6F5F96BA6C92">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>NICKNAME</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOIN_YYYY" id="92F91880-361F-A6C8-FE91-7D790CF942EF">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>JOIN_YYYY</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSITION" id="F445E4C5-2F60-7F2A-3B4D-62B4F7D05B3E">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>POSITION</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BACK_NO" id="7E5CC083-6494-D5E0-885E-AF75A2286FCE">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>BACK_NO</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NATION" id="B4F5863A-63A3-C7B7-D254-D276CE343667">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>NATION</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTH_DATE" id="AEE7D121-3E9B-DF0F-D46C-7AC2244C36CC">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>BIRTH_DATE</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOLAR" id="0D78B664-673B-ACC1-A2EA-45108661C006">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>SOLAR</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HEIGHT" id="9E385F40-C456-4D41-56CE-53379B35402D">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>HEIGHT</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WEIGHT" id="12CD7CA0-F9D1-4429-0A13-2D0E2C9FEBF9">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>PLAYER</sourceObjSchema>
+<sourceObjName>WEIGHT</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="382EE188-BB66-36E2-8994-5BA055EC0FE7" name="PLAYER_PK">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PLAYER_PK</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1FB7D4E-76DD-4D74-459C-186B1A321041"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43A45595-44F2-C3E9-5B49-ABFF5C61FD18" schemaObject="0D1F25F7-37E5-A754-F471-0A00B8BAE8B2" name="PLAYER_PK">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PLAYER_PK</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1FB7D4E-76DD-4D74-459C-186B1A321041"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="691B4583-24E0-03FB-2883-E44DE46938A3" name="PLAYER_FK">
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA8F4E7F-8C5E-9A77-3DD4-65160A152D8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

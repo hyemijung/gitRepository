@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E6B33D2B-D8A7-CAB3-55AF-EE1860F52A6F" schemaObject="0D1F25F7-37E5-A754-F471-0A00B8BAE8B2" name="SCHEDULE">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>SCHEDULE</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STADIUM_ID" id="BAB14CCC-88FA-F8FA-117F-4F64011FF377">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCHEDULE</sourceObjSchema>
+<sourceObjName>STADIUM_ID</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="56388B27-0B32-0A63-50DA-C47ABDF3ACC5" referredColumn="86DDC25C-5EF9-2C29-D060-DF778AFA5D03"/>
+</associations>
+</Column>
+<Column name="SCHE_DATE" id="9CF6AC6E-DD37-DC63-EAE3-7535EE798A99">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCHEDULE</sourceObjSchema>
+<sourceObjName>SCHE_DATE</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GUBUN" id="B56F3469-148C-39E0-E9A5-E9B26341D553">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCHEDULE</sourceObjSchema>
+<sourceObjName>GUBUN</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOMETEAM_ID" id="68939660-A144-FE75-DB99-76CA8BD1C555">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCHEDULE</sourceObjSchema>
+<sourceObjName>HOMETEAM_ID</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AWAYTEAM_ID" id="FC5909EF-B636-8157-DC0D-7FC8953F606B">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCHEDULE</sourceObjSchema>
+<sourceObjName>AWAYTEAM_ID</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOME_SCORE" id="2A298D9A-BE2C-9021-6C4F-683B22B424B7">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCHEDULE</sourceObjSchema>
+<sourceObjName>HOME_SCORE</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AWAY_SCORE" id="64B7751A-3266-2F38-EB84-B02FAFB00CFF">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCHEDULE</sourceObjSchema>
+<sourceObjName>AWAY_SCORE</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEC2D5B4-3344-AAAA-EF83-193B08F6EEBD" name="SCHEDULE_PK">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>SCHEDULE_PK</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAB14CCC-88FA-F8FA-117F-4F64011FF377"/>
+<colUsage columnID="9CF6AC6E-DD37-DC63-EAE3-7535EE798A99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7193157-61A3-D24A-F1F4-4384FBE1A52B" schemaObject="0D1F25F7-37E5-A754-F471-0A00B8BAE8B2" name="SCHEDULE_PK">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>SCHEDULE_PK</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAB14CCC-88FA-F8FA-117F-4F64011FF377"/>
+<colUsage columnID="9CF6AC6E-DD37-DC63-EAE3-7535EE798A99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00F6A0E5-09B0-23EB-EE5A-6107E5AD65A3" name="SCHEDULE_FK">
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAB14CCC-88FA-F8FA-117F-4F64011FF377"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

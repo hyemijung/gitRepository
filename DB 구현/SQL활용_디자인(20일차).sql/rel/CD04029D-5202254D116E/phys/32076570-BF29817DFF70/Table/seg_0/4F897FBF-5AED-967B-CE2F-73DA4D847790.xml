@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="STADIUM" directorySegmentName="seg_0" id="4F897FBF-5AED-967B-CE2F-73DA4D847790">
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<schemaObject>0D1F25F7-37E5-A754-F471-0A00B8BAE8B2</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D9D10815-2B42-7F02-7BB7-4F95E80514DD</segment>
+<tableSpace>A37D19B4-FC6D-B61A-8203-B29C7B292B0B</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ADDRESS" id="1056D3E3-D366-D4FE-D0E4-C977BAA16596">
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HOMETEAM_ID" id="23D53F4C-05CF-AA69-7D88-DB11FC431C51">
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEAT_COUNT" id="303BB4F0-E59F-54B9-24EE-0935FEBE65D7">
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STADIUM_ID" id="86DDC25C-5EF9-2C29-D060-DF778AFA5D03">
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STADIUM_NAME" id="948CAF8F-C603-732C-ECF2-3D96FFE1E5D1">
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TEL" id="BE377C0D-C096-5D4E-5098-61733B557A43">
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DDD" id="C04D476F-6826-7E00-E4EF-9E608AFA6BE5">
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="STADIUM_PK" id="79E98DA0-0EAA-752D-E55D-0C27FBB968A9">
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<schemaObject>0D1F25F7-37E5-A754-F471-0A00B8BAE8B2</schemaObject>
+<segment>8BD163CA-B95D-9999-02E9-F99D4CA70178</segment>
+<tableSpace>A37D19B4-FC6D-B61A-8203-B29C7B292B0B</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="STADIUM_PK" id="C63A0BA8-4CDA-68F0-B39C-9471E7BE917A">
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<segment>8BD163CA-B95D-9999-02E9-F99D4CA70178</segment>
+<tableSpace>A37D19B4-FC6D-B61A-8203-B29C7B292B0B</tableSpace>
+<existingIndex>79E98DA0-0EAA-752D-E55D-0C27FBB968A9</existingIndex>
+<indexSegment>8BD163CA-B95D-9999-02E9-F99D4CA70178</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="56388B27-0B32-0A63-50DA-C47ABDF3ACC5" containerWithKeyObject="E6B33D2B-D8A7-CAB3-55AF-EE1860F52A6F" localFKIndex="00F6A0E5-09B0-23EB-EE5A-6107E5AD65A3" name="SCHEDULE_FK">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>SCHEDULE_FK</sourceObjName>
+<createdBy>TJ</createdBy>
+<createdTime>2019-01-18 09:13:59 UTC</createdTime>
+<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
+<referredTableLongName>SCOTT.STADIUM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4F897FBF-5AED-967B-CE2F-73DA4D847790</referredTableID>
+<keyObject>C63A0BA8-4CDA-68F0-B39C-9471E7BE917A</keyObject>
+<referredKeyID>C63A0BA8-4CDA-68F0-B39C-9471E7BE917A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>STADIUM_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
