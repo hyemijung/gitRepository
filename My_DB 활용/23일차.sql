@@ -172,9 +172,9 @@ FROM EMP;
 
 -- 명선씨 방법
 SELECT  EMPNO, ENAME, JOB, MGR, HIREDATE
-                , TO_CHAR( SAL * 12 , 'L99,999,999' ) "1년차 연봉"
-                , TO_CHAR( (SAL + SAL*1.1) * 12 , 'L99,999,999' ) "2년차 연봉"
---                 , TO_CHAR(  , 'L99,999,999' ) "1~2년치 연봉의 합"
+                , TO_CHAR( SAL*12 , 'L99,999,999' ) "1년차 연봉"
+                , TO_CHAR((SAL*1.1) *12 , 'L99,999,999' ) "2년차 연봉"
+                , TO_CHAR((SAL + SAL*1.1) *12  , 'L99,999,999' ) "1~2년치 연봉의 합"
                 , COMM, DEPTNO
 FROM EMP;
 
