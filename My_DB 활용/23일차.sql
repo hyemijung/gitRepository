@@ -321,8 +321,8 @@ FROM EMP;
 
 
 
--- DATE 타입끼리 연산되나??
--- DATE의 기본은 - 일수 인가?
+-- DATE 타입끼리 연산되나?? yes
+-- DATE의 기본은 - 일수 인가? yes
 -- SYSDATE +  1 : 하루를 더한것
 -- SYSDATE + 1     20190123
 
@@ -334,7 +334,7 @@ FROM EMP;
 
 -- 연단위 계산전 일수로 계산하고 다시 연단위로 바꿔야함
 -- 365일 = 1년
-
+ 
 --충현씨 푼것
 -- 임의의 날짜를 쓸때 TO_DATE 써야되는건데 이건이미 SYSDATE 과 HIREDATE 의 데이터타입끼리의 연산이니 T0_DATE 안써도됨
 -- TO_DATE 쓰면 자동형변환으로 데이터타입이 문자로 또 문자가 데이터타입으로 되서 나온것
@@ -348,6 +348,13 @@ WHERE ( (TO_DATE(SYSDATE + 30) - TO_DATE(HIREDATE) ) / 365) <= 38;
 -- TO_DATE 안쓰고 계산
 SELECT EMPNO, ENAME, JOB, MGR, HIREDATE
                 , SAL, COMM, DEPTNO
+                , FLOOR( ( (SYSDATE + 30) - HIREDATE )/ 365 )  "입사년수"
+FROM EMP
+WHERE  ( (SYSDATE + 30) - HIREDATE )/ 365 <= 38;
+
+
+
+SELECT EMP.*
                 , FLOOR( ( (SYSDATE + 30) - HIREDATE )/ 365 )  "입사년수"
 FROM EMP
 WHERE  ( (SYSDATE + 30) - HIREDATE )/ 365 <= 38;
@@ -446,6 +453,7 @@ FROM STADIUM;
 
 --!!혼자 못함
 -- 차근차근 생각하자 하나씩 하나씩 해결하자
+-- SEAT_COUNT 는 NUMBER타입 -> ,  콤마를 넣으려면 TO_CHAR이용해 문자로 바꿔야 한다 -> || 수직바이용해 좌석이라는 단어를 더한다
 SELECT STADIUM_NAME "스타디움 이름", TO_CHAR(SEAT_COUNT, '999,999') || '좌석' "좌석수"
 FROM STADIUM;
 
