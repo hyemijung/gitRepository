@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="SQL활용_디자인(20일차).sql" id="37C349FD-43C9-4C1F-4360-A5E729B6BD9F" version="3.5">
-<createdBy>TJ</createdBy>
-<createdTime>2019-01-18 08:49:08 UTC</createdTime>
-<ownerDesignName>SQL활용_디자인(20일차).sql</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>37C349FD-43C9-4C1F-4360-A5E729B6BD9F</designId>
-</OSDM_Design>

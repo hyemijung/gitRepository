@@ -294,6 +294,7 @@ FROM DUAL;
 --max	그룹의 최대값을 반환합니다
 --min	그룹의 최소값을 반환합니다
 
+--!!!그룹함수는 null이 존재하면 어떻게 되나?
 
 
 
@@ -385,7 +386,7 @@ from emp;
 
 --아무 의미없음- 이미 null을 포함해서 연산하고 null을 처리하는것
 -- (300 + 500 + 100) / 3 -> nvl(733.33333333333, 0)     
-select nvl(avg(comm, 0))
+select nvl(avg(comm), 0)
 from emp;
 
 
@@ -484,7 +485,7 @@ select max(sal)
 from emp
 group by deptno;
 
-
+--null 추가한것
 select deptno, max(sal)
 from emp
 group by deptno;
@@ -620,7 +621,7 @@ group by position;
 
 
 --준혁씨가 알려줌
---nvl로 null을 업앤후
+--nvl로 null을 없앤후
 --avg()
 -- 전체 데이터 합 / 전체 데이터 갯수
 -- 1) 전체 데이터 중 null제외 / null 제외 전체 데이터 갯수
@@ -646,5 +647,8 @@ from player
 where height is not null
 and position is not null
 group by position;
+
+
+
 
 

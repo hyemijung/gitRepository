@@ -6,7 +6,9 @@ AND POSITION = 'MF';
 -- 위의 코드가 무슨 뜻인지 설명하라?
 -- IN을 사용하지않고 같은 결과 되도록 만들어라
 
---팀 삼성블루윙즈와 전남 드래곤즈 두팀의 선수들 중에 포지션이 미드필더인 선수들의 플레이어 네임, 포지션, 백넘버, 키를 모두 조회하시오
+--팀 삼성블루윙즈와 전남 드래곤즈 두팀의 선수들 중에 
+--포지션이 미드필더인 선수들의 
+--플레이어 네임, 포지션, 백넘버, 키를 모두 조회하시오
 
 SELECT PLAYER_NAME, POSITION, BACK_NO, HEIGHT
 FROM PLAYER
@@ -207,6 +209,10 @@ FROM DUAL;
 
 -- 양쪽의 공백도 제거한다 - LTRIM RTRIM 도 매개변수 없으면 공백 제거
 SELECT TRIM(' ' FROM '      xxxYYZZxYZxx1x       ')
+FROM DUAL;
+
+
+SELECT TRIM('      xxxYYZZxYZxx1x       ')
 FROM DUAL;
 
 
@@ -485,7 +491,7 @@ select rpad(nickname, length(nickname)*2 + 3, '!')
 from player;
 
 
-SELECT RPAD(PLYER_NAME, '님') AS 선수명
+SELECT RPAD(PLAYER_NAME, '님') AS 선수명
 FROM PLAYER;
 
 
@@ -635,6 +641,8 @@ FROM DUAL;
 -- 입사후 6개월을 더한 결과
 SELECT ENAME, HIREDATE, ADD_MONTHS(HIREDATE, 6)
 FROM EMP;
+
+
 
 --NEXT DAY
 
