@@ -122,8 +122,9 @@ Download -> tomcat8 ->  Archives (로 가면 옛날버전 다운로드 가능: 회사에서 쓰는 
 폴더명 eclipse를 eclipseweb으로 바꾸고 
 이것을 잘라내기하여 c드라이브에 붙여넣기
 
-eclipse.exe 를 이름바꾸기 -> eclipseWeb.exe으로
-그리고 이것 마우스 우클릭해서 바로가기만들어서 바탕화면에 추가
+eclipse.exe 를 이름바꾸기 -> eclipse.exe으로
+그리고 이것 마우스 우클릭해서 바로가기만들어서 바로가기 이름을  바탕화면에 추가 한다
+바로가기의 이름을 기존것과 구분되도록 eclipseWeb.exe 로 바꿔준다
 
 >>eclipse.exe 클릭해서 실행
 >>eclipse platform launcher에서 
@@ -149,8 +150,6 @@ apache-tomcat-8.0.9-windows-x64
 
 
 <시험풀이>
-
-1.1) 나 2점 깎임 왜냐면 alter table로 제약조건해서 틀림
 
 
 1.3) 트랜잭션 틀림 - 2점 깎임

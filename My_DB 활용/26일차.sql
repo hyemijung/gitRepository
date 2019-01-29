@@ -159,4 +159,37 @@ and coworker.ename <> 'SMITH';
 
 
 
+--서브쿼리
+--인라인 뷰(가상 테이블)  <--> 정적테이블 (괄호없이 원래 사용하던 방식)
 
+--윈도우 함수
+--rank over
+select rank() over(order by sal desc) 순위, e.*
+from emp e
+order by sal;
+
+--rownum을 제대로 쓰려면 이정도는 알아야 한다
+
+SELECT rownum 급여순위, E.*
+FROM (SELECT *
+      FROM EMP
+      ORDER BY SAL DESC) E
+WHERE ROWNUM <= 5;
+
+
+
+--인터넷 검색한 rownum의 정보
+--ROWNUM이 부여되는 순서는 테이블에 먼저 입력(INSERT) 된 레코드의 순서대로 번호가 부여되어
+--정렬을 하더라도 입력된 순서는 바뀌지 않기 때문이다
+--ROWNUM의 한계는 숫자가 1부터 반영이 되기 때문에
+--ROWNUM의 중간의 값으로 시작되는 조건의 레코드를 검색할 수 없다.
+
+--인라인 뷰(INLINE VIEW)
+-- 인라인 뷰는 FROM 절에 사용되는 서브 쿼리를 의미한다. 
+--이전에 알아본 뷰(VIEW)는 CREATE 명령어를 이용하여 생성하지만 
+--인라인 뷰는 SQL 문 내부에 뷰를 정의하여 사용한다. 
+--CREATE를 사용하지 않기 때문에 인라인 뷰는 일시적으로 사용되는 특징이 있다.
+
+--인라인 뷰를 통해 새로운 테이블을 일시적으로 생성하고, 
+--인라인 뷰에 대해서 ROWNUM을 이용하여 쿼리문을 실행하면 원하는 결과를 검색이 가능하다.
+--(인라인 뷰에 의해 ROWNUM이 1부터 새로 부여됨)
