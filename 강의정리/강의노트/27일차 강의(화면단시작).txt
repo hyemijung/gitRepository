@@ -504,7 +504,7 @@ http://127.0.0.1:8090/HelloHtml/BlockTag.jsp  		<- 실제 localhost 주소
 
 
 
-서바단   // 화면단
+서버단   // 화면단
 자바   COMPILER -> class -> 실행
 html, css, javascript      INTERPRITER  -> 실행
 
@@ -566,3 +566,137 @@ image라는 코드를 삭제하고 다시 실행시키면 제대로 실행된다
 
 <img src="이미지 파일명" width="가로 길이"
  	height="세로 길이" alt="대체 텍스트" />
+
+>>이미지 크기 조절이 자유로우나 이미지 크기를 키우게되면 해상도가 떨어지게 된다
+
+>>alt 대체 텍스트: 이미지가 존재하지않을때 이미지대신 알려주는 대체 테스트 
+>>alt가 없으면 이미지가 없는, 깨진 상태로 나온다
+
+>><img src = : 이미지의 경로를 알려준다
+
+
+[경로]
+두가지 의미
+
+1. 절대 경로  
+ex) C:\Java\jdk8
+유일하다 무조건 그곳이다 / 주소
+
+2. 상대 경로
+ex) ./
+상대적, 절대적 X, 가변한다
+누군가의 입장, 즉 관찰자의 위치에 따라 상대적 경로가 달라진다
+자신이 어디에 위치하는지 알고 그 다음 필요한 경로를 찾아가야 한다
+
+C:\Java
+\jdk8
+
+C:
+\Java\jdk8
+
+캡처 19번
+<img src="C:\workspaceWeb\HelloHtml\WebContent\icox_logo.gif" width="200" 
+		height="58" alt="아이콕스" />
+절대 경로를 설정해도 오류가 난다
+왜? 경로의 주소는 아주 중요함으로 보안이슈 때문에 차단해 두었다
+
+
+
+<img src="./icox_logo.gif" width="200" 
+		height="58" alt="아이콕스" />
+>>위와 차이점 ./  (나자신이 있는 폴더 즉, ImageTag가 있는 폴더(코드를적는위치)에 icox_logo.gif 파일이 같이 존재한다는 의미)
+
+
+
+
+<img src="./resource/icox_logo2.gif" width="100" 
+		height="200" alt="아이콕스" />
+>>위와 차이점 
+(나자신이 있는 폴더에서 resource라는 폴더로 내려가서 icox_logo2.gif를 넣은것)
+
+path(경로): /HelloHtml/WebContent/resource/icox_logo2.gif
+<- 상대경로로 적혀있는 것
+
+절대경로는 왠만해선 사용하지않는다
+
+
+!!중요!!!!
+.      현재위치 (나자신이 존재하는 폴더)
+/      폴더표시   or root(최상위폴더를 지칭하는 의미도 가짐)
+
+\: 마이크로 소프트에서 폴더표시(명령어인지 폴더명인지 구분자로서 존재)
+맥이나 리눅스에서는 / 이 폴더표시
+
+
+C:\Users\TJ>cd
+C:\Users\TJ
+
+C:\Users\TJ>cd..
+
+C:\Users>cd TJ
+
+C:\Users\TJ>cd..
+
+C:\Users>cd..
+
+C:\>cd Users\TJ
+
+C:\Users\TJ>cd\     <- 한방에 최상의 위치로 간다
+
+C:\>
+
+C:\>cd Users\TJ
+
+C:\Users\TJ>
+
+C:\Users\TJ>cd \Java
+
+C:\Java>
+
+
+
+../       나의 위치에서 상위로 올라가려면
+
+
+resource 라는 폴더를 WebContent폴더 아래만듬
+resource\icox_logo2.gif
+
+
+
+실습)
+HelloHtml 에서
+오늘의 날짜를 강조표시하고
+구분선으로 구분한 다음
+이미지 2개를 불러오시오
+
+view 폴더안에 파일명은 imageTest.jsp
+
+불러올 이미지 경로는 WebContent에 icox_logo.gif
+크기는 정사각형으로 50
+
+and WebContent\images 폴더에 map.jpg (1-10폴더안에 있음)
+를 보여주는데, 가로, 세로 100, 200
+
+
+
+
+
+
+어트리뷰트            속성
+attribute 		
+
+속성 : 보라색으로 표기되는 모든것(src, width, height, alt .. etc)
+
+
+[image tag에 대한 정보] - attributes 확인해봐라
+https://www.w3schools.com/tags/tag_img.asp
+
+
+캐싱, 캐시 - 이미지를 빠르게 불러오기위해 브라우저자체에서 기록을 저장한다
+>>지우려면 ? > 크롬 -설정 - 고급
+
+
+브라우저마다 코드를 해석하는것이 다르다
+
+
+단위 
