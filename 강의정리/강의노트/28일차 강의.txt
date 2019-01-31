@@ -286,4 +286,4 @@ TableTagMerge
 2. 1행에 스타일 width를 적용하면 왜 나머지 친구들도 적용되는지
 3. css가 있고 테이블에 style이 있는데 형식이 다른 이유?
 4. aline 을 css에 적을 수 없나요?
-5. tr
+5. tr에만 aline을 쓰고 테이블 시작하는 
