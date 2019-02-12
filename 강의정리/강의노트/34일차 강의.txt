@@ -1,0 +1,105 @@
+34일차 강의
+
+
+TextNode 는 마지막 자식 - 얘 밑엔 아무것도 없다
+이건  setAttribute 못한다
+
+파일: DomControl3
+
+div id='h1Container'
+
+이 태그 안에
+h1태그 "새로 만들어진 태그1"를 추가하시오 
+
+
+
+
+@ 웹프로젝트를 배포 할때는 (팀프로젝트할때)
+expert -> WAR file 형식으로 배포해야한다
+
+캡처 26번
+
+export source file 에 체크하면
+팀원같으면 체크하여 코드 수정이 가능하도록하고
+배포만 하는거면 여기에 체크하지않아야 내코드를 수정하거나 하지못하는것
+체크하지않아도  실행은 가능하다
+
+@ import -> WAR file
+
+
+
+
+
+파일: DomControl4 시리즈
+
+태그 삭제
+선택 요소.removeChild(선택 요소2);
+선택 요소의 자식인 선택 요소2를 삭제
+
+부모에서 자식을 지우는 것!!!!!!!!!!!!!
+
+
+
+-----------------------------------------------------------
+
+프로젝트명: FormStudy
+파일 basic.jsp
+	basic.js
+
+basic.js 만들기(js만 쓸수있는 파일)
+new - file 로 만들어 뒤에 확장자만 직접 적어주면됨
+
+
+
+
+!!!!!!!중요!!!!!!!!!!
+!!! 100프로 알아야 시험해결 가능!!!!
+파일 FormDocumentWrite
+
+
+</span> 은 인라인의 특징가짐, 여러개 사용 가능
+
+
+
+
+
+
+obj.innerHTML = str;
+
+!!!알아야!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+innerHTML  
+모든 태그에 다 존재한다( br, hr 단일로 끝나는 태그들 제외하고)
+
+
+
+
+
+(실습)
+파일: FormTest
+
+
+함수명 끝에는 Fnc를 붙이자
+
+
+
+파일 DomModelBasic1_1
+DomModelBasic1_2
+
+추가버튼을 누르면 
+
+
+
+
+
+------------------
+
+파일: FormDocumentWrite.jsp
+FormDocumentWrite1_1
+
+if문 확인
+validation 체크
+조건문의 시작
+
+
+ctrl + h : 검색??
