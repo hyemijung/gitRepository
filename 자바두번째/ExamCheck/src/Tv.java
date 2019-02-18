@@ -3,22 +3,22 @@ package exam.test;
 public class Tv extends Product{
 
 	String productName = "GoZiller";
-	int price = 500;
+	int price = 500; 
 	
 	Tv(){
 		this(100);
 	}
 	
-	Tv(int price){
+	Tv(int price){ //
 		super();
-		this.price = price;
+		this.price = price;   // 
 	}
 	
-	Tv(int price, int bonusPoint){
+	Tv(int price, int bonusPoint){ 
 		super();
-		this.price = price;
-		this.bonusPoint = 200;
-		this.productName = productName;
+		this.price = price; //
+		this.bonusPoint = 200;//
+		this.productName = productName; //  
 	}
 	
 	int getBonusPoint() {
