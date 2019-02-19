@@ -12,7 +12,7 @@ public class Dice {
 		System.out.println("주사위 숫자: " + num);
 	}
 	
-	public int getDiceNum() {   // 다이스에있는 넘을 가져와서 언젠가 플레어가 필요할때 보여주려고
+	public int getDiceNum() {
 		return num;
 	}
 }

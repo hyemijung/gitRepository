@@ -20,11 +20,15 @@ public class Player {
 		dice.diceThrow();
 		dice.diceView();
 		
-		totalNumDice
+		totalNumDice = totalNumDice + dice.getDiceNum(); 
 	}
 	
-	public void PlayerInfoView() {
+	public void myInfoView() {
+		System.out.println("==============플레이어 정보==============");
 		System.out.println("플레이어 이름: " + name);
+		System.out.println("주사위를 굴린 숫자의 총합: " + totalNumDice);
+		System.out.println("=====================================");
+		System.out.println();
 	}
 	
 	

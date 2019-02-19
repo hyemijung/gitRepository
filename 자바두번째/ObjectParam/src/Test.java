@@ -35,7 +35,7 @@ public class Test {
 		
 		h2.apple = new Apple("거창사과", "새빨간색");
 		
-		h2.appl e.showAppleInfo();
+		h2.apple.showAppleInfo();
 		
 		
 		
