@@ -1,18 +1,14 @@
-public class ChildParentTest {
+public class ChildParentTest2 {
 	public static void main(String[] args) {
 
-	Parent p = new Child();
-	Child c = new Child();
+	Parent2 p = new Child2();
+	Child2 c = new Child2();
 	
-
 	
-	System.out.println("p주소" + p);
-	System.out.println("c주소" + c);
 	
-	Child cc = (Child)p;  // 자식으로 형변환
-	System.out.println("cc주소" + cc);
-	
-	System.out.println("cc.x = " + cc.x);
+	Child2 cc = (Child2)p;  // 자식으로 형변환y
+	System.out.println("cc주소" + cc); 
+	System.out.println("cc.x = " + c);
 	cc.showY();
 	p = cc;   // 다시 부모로 형변환
 	
@@ -20,7 +16,7 @@ public class ChildParentTest {
 	p.method();
 	System.out.println("c.x = " + c.x);	
 	c.method();
-	c.showX();
+	c.showX();  
 	
 	System.out.println(p);
 	System.out.println(c);
@@ -29,7 +25,7 @@ public class ChildParentTest {
 	}
 }
 
-class Parent {
+class Parent2 {
 	int x = 1000;  //인스턴스 변수(재정의 되지않는다) // Parent만의 특징
 	
 	void method(){
@@ -41,12 +37,9 @@ class Parent {
 	}
 }
 
-class Child extends Parent {
+class Child2 extends Parent2 {
 	int x = 200;  //인스턴스 변수(재정의 되지않는다) // Child만의 특징
-
-//	부모의 메서드를 오버라이딩(수정,추가) - 오버라이딩 했다는건 무언가 기능이 더 필요해서 한것이다
-//	이렇게 해야만 이후에 보안을 위해,
-//	->부모클래스의 정보를 숨길것은 숨기고 자식클래스의 보여줄것은 보여주는 것이 가능해 진다
+ 
 	void method(){
 		System.out.println("Child Method"); 
 	}
