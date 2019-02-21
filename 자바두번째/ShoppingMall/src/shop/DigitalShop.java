@@ -21,7 +21,7 @@ public class DigitalShop {
 		
 	}
 	
-	public DigitalShop(String shopName, int moneym, Tv tv) {
+	public DigitalShop(String shopName, int money, Tv tv) {
 		this.money = money;
 		this.shopName = shopName;
 		this.tv = tv;
@@ -50,7 +50,7 @@ public class DigitalShop {
 		
 		customer.tv = tv;
 		
-		tv = null;
+		tv = null;            // 티비가 팔리고 가게에 티비가 없음을 보여주려고 null로 처리하여 날려버림
 		
 		System.out.println("tv를 팔았습니다");
 		System.out.println();
