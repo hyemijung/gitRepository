@@ -3,13 +3,13 @@ package gradeProgram;
 public class Student {
 
 	
-	int num;
-	String name;
-	int java;
-	int dbImplement;
-	int dbUtilize;
-	int screen;
-	int sum;
+	private int num;
+	private String name;
+	private int java;
+	private int dbImplement;
+	private int dbUtilize;
+	private int screen;
+	private int sum;
 //	double avg;
 	
 	public int getNum() {
@@ -56,11 +56,9 @@ public class Student {
 	}
 	public void setSum(int java,int dbImplement,int dbUtilize, int screen) {
 		sum = java+dbImplement+dbUtilize+screen;
-//		avg = sum/4.f;
+	
 	}
-//	public double getAvg() {
-//		return avg;
-//	}
+
 	
 	
 }

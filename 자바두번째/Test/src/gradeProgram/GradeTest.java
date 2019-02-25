@@ -18,9 +18,9 @@ public class GradeTest {
 			Student student = new Student();
 			System.out.println("성적입력을 원하면 1을 입력해주세요\n성적출력을 원하면 2를 입력해주세요");
 			
-			if (scan.nextInt()!=1 && scan.nextInt()!=2) {
-				return;
-			}
+//			if (scan.nextInt()!=1 || scan.nextInt()!=2) {
+//				return;
+//			}
 			
 			int select = scan.nextInt();
 
