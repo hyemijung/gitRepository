@@ -95,7 +95,7 @@ Delete
 https://blog.naver.com/sooni_/220354105929 블로그에 삭제 정보있음
 
 오라클 11g xe 삭제
-disk1 폴더 가서 setuo.exe 실행
+disk1 폴더 가서 setup.exe 실행
 remove 선택
 
 
@@ -221,7 +221,7 @@ no rows selected
 
 <다시 계정을 만들어 보자!>
 
-sqlplus system/자신이 만든 비법
+sqlplus system/자신이 만든 비번
 
 show user;
 
