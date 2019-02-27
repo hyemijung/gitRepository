@@ -12,6 +12,14 @@ public class Customer {
 		this.name = name;
 		this.age = age;
 		this.money = money;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [name=" + name + ", age=" + age 
+				+ ", money=" + money + ", myBuyProduct=" + myBuyProduct + "]";
 	}
 		
+	
 }

@@ -6,6 +6,7 @@ public class ProductStore {
 	int storeMoney = 0;  // 주인장의 소지금
 	int price = 0; // 제품의 가격
 	String productName = "";
+
 	
 	
 	ProductStore(String productName, int price){
@@ -24,5 +25,14 @@ public class ProductStore {
 			System.out.println(customer.money - this.price + " 원 부족합니다.");
 		}
 	}
+
+	@Override
+	public String toString() {
+		return "ProductStore [storeMoney=" + storeMoney 
+				+ ", price=" + price + ", productName=" + productName + "]";
+	}
+	
+	
+	
 	
 }
