@@ -3,20 +3,21 @@ public class Guest {
 	String name = "";
 	int age = 0;
 	String id ="";
-	String id2 = "";
+	String idCheck = "";
 	
 	
 	public Guest() {
 		super();
+		
 	}
 
 
-	public Guest(String name, int age, String id, String id2) {
+	public Guest(String name, int age, String id, String idCheck) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.id = id;
-		this.id2 = id2;
+		this.idCheck = idCheck;
 	}
 
 
@@ -50,13 +51,13 @@ public class Guest {
 	}
 
 
-	public String getId2() {
-		return id2;
+	public String getIdCheck() {
+		return idCheck;
 	}
 
 
-	public void setId2(String id2) {
-		this.id2 = id2;
+	public void setIdCheck(String idCheck) {
+		this.idCheck = idCheck;
 	}
 
 
@@ -65,7 +66,7 @@ public class Guest {
 	
 	@Override
 	public String toString() {
-		return "Guest [name=" + name + ", age=" + age + ", id=" + id + ", id2=" + id2 + "]";
+		return "Guest [name=" + name + ", age=" + age + ", id=" + id + ", idCheck=" + idCheck + "]";
 	}
 	
 	
