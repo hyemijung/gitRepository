@@ -428,5 +428,6 @@ c드라이브 -> eclipseWeb -> plugins에
 C:\eclipseWeb\plugins 복붙할 경로
 
 
-
+플러그인 삭제는 막 삭제하는것이 아니라
+언인스톨해야
 
